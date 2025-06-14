@@ -60,6 +60,25 @@ Ini adalah beberapa procedure penting yang digunakan
 
 ### Triger ###
 
+![image](https://github.com/user-attachments/assets/a1a3e604-fa25-40ed-bf4b-e6281986ffae)
+
+Ini adalah beberapa triggers penting yang digunakan
+
+```
+CREATE TRIGGER trg_update_order_total //
+    AFTER INSERT ON order_items
+    FOR EACH ROW
+BEGIN
+    UPDATE orders 
+    SET total_price = calculate_order_total(NEW.order_id)
+    WHERE id = NEW.order_id;
+END //
+```
+Trigger ini digunakan untuk otomatis akan update order totalnya ketika order item berubah
+
+Beberapa peran trigger lainnya yang digunakan untuk sistem ini yaitu 
+1. Trigger validasi ketersedian makanan sebelum dipesan
+2. Trigger secara otomatis menghitung subtotal untuk item pesanan
 
 ### Transaction ###
 
