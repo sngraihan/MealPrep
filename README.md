@@ -82,6 +82,43 @@ Beberapa peran trigger lainnya yang digunakan untuk sistem ini yaitu
 
 ### Transaction ###
 
+```models/order_model.php```
+
+```
+    public function placeOrder($user_id, $order_date, $meal_id, $quantity) {
+        try {
+            // [UPDATED]: Better transaction handling and return value
+            $this->conn->beginTransaction();
+            
+            // Call the stored procedure
+            $stmt = $this->conn->prepare("CALL place_order(?, ?, ?, ?)");
+            $result = $stmt->execute([$user_id, $order_date, $meal_id, $quantity]);
+            
+            if ($result) {
+                $this->conn->commit();
+                return true;
+            } else {
+                $this->conn->rollBack();
+                return false;
+            }
+        } catch(PDOException $e) {
+            if ($this->conn->inTransaction()) {
+                $this->conn->rollBack();
+            }
+            error_log("Error in placeOrder: " . $e->getMessage());
+            return false;
+        }
+    }
+```
+
+### **1. Kapan Transaction Digunakan:**
+
+- **Saat**: User melakukan pemesanan meal
+- **Dipanggil dari**: Controller atau view yang handle form order
+- **Tujuan**: Memastikan data consistency saat place order
+
+
+
 
 ### Stored Function ###
 
