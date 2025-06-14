@@ -2,7 +2,7 @@
 
 Proyek ini merupakan sistem pemesanan makanan harian yang dibangun menggunakan PHP Native dan MySQL. Tujuannya adalah untuk mengelola pemesanan makanan secara efisien dan konsisten, dengan memanfaatkan stored procedure, trigger, transaction, dan stored function. Sistem ini juga dilengkapi mekanisme backup otomatis untuk menjaga keamanan data jika terjadi hal yang tidak diinginkan.
 
-![Home](screenshots/home.png)
+![image](https://github.com/user-attachments/assets/29f54566-efe7-43a6-9473-88301d39d6dc)
 
 ## 📌 Detail Konsep
 
@@ -13,7 +13,8 @@ Peran **stored procedure**, **trigger**, **transaction**, dan **stored function*
 ### 🧠 Stored Procedure 
 Stored procedure bertindak seperti SOP internal yang menetapkan alur eksekusi berbagai operasi penting di sistem pemesanan makanan. Procedure ini disimpan langsung di lapisan database, sehingga dapat menjamin konsistensi, efisiensi, dan keamanan eksekusi, terutama dalam sistem multi-user.
 
-![Procedure](screenshots/procedure.png)
+![image](https://github.com/user-attachments/assets/333fa446-1006-43a8-a0df-bc6d542c4c9b)
+
 
 Beberapa procedure penting yang digunakan:
 
@@ -51,6 +52,8 @@ return $stmt->execute([$order_id]);
 Dengan menyimpan proses-proses ini di sisi database, sistem menjaga integritas data di level paling dasar, terlepas dari cara aplikasi mengaksesnya.
 
 ### 🚨 Trigger
+
+![image](https://github.com/user-attachments/assets/7796141b-8758-4698-a453-a41958e862d6)
 
 Trigger `trg_update_order_total` berfungsi sebagai sistem otomatis yang menghitung ulang total harga pesanan setiap kali ada item baru yang ditambahkan. Trigger ini memastikan konsistensi data tanpa perlu intervensi manual dari aplikasi.
 
@@ -452,24 +455,32 @@ Sistem ini dirancang dengan memperhatikan prinsip-prinsip dasar pemrosesan data 
 ## 📸 Screenshots
 
 ### Halaman Utama
-![Halaman Utama](screenshots/home.png)
+![image](https://github.com/user-attachments/assets/745db0ed-b6bd-4fe1-9d63-98d365e88286)
+
 
 ### Dashboard Admin
 ![Dashboard Admin](screenshots/admin_dashboard.png)
 
 ### Pemesanan Makanan
-![Pemesanan Makanan](screenshots/meals.png)
+![image](https://github.com/user-attachments/assets/f85d300d-e547-4dca-a5a4-0ae51315c3e4)
 
 ### Kelola Menu
-![Kelola Menu](screenshots/admin_menu.png)
+![image](https://github.com/user-attachments/assets/3707ae5c-5aed-4ee9-a1f9-248b34351e2e)
 
 ### Backup Database
-![Backup Database](screenshots/backup.png)
+![image](https://github.com/user-attachments/assets/1b83e5d5-e970-456d-8450-c8cabed6a3a9)
 
 ### Riwayat Pesanan
-![Riwayat Pesanan](screenshots/orders.png)
+![image](https://github.com/user-attachments/assets/b605e5f2-8f6f-4589-868f-431d4dccc66b)
+
 
 ---
 
 
+## 👨‍💻 Kontributor
 
+- **GitHub**: [github.com/sngraihan]
+- **GitHub**: [github.com/zidanthoriq]
+- **GitHub**: [github.com/aditayu]
+
+---
