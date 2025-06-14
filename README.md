@@ -471,16 +471,5 @@ Sistem ini dirancang dengan memperhatikan prinsip-prinsip dasar pemrosesan data 
 
 ---
 
-## 📄 Lisensi
 
-Proyek ini dibuat untuk keperluan edukasi dan pembelajaran sistem pemrosesan data terdistribusi.
 
-## 👨‍💻 Kontributor
-
-- **Developer**: [Nama Anda]
-- **Email**: [email@example.com]
-- **GitHub**: [github.com/username]
-
----
-
-*Dibuat dengan ❤️ untuk pembelajaran Pemrosesan Data Terdistribusi*
