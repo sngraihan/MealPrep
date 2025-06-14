@@ -457,9 +457,8 @@ Sistem ini dirancang dengan memperhatikan prinsip-prinsip dasar pemrosesan data 
 ### Halaman Utama
 ![image](https://github.com/user-attachments/assets/745db0ed-b6bd-4fe1-9d63-98d365e88286)
 
-
 ### Dashboard Admin
-![Dashboard Admin](screenshots/admin_dashboard.png)
+![image](https://github.com/user-attachments/assets/951f2435-9c6a-4463-8216-6b39c6e68fbc)
 
 ### Pemesanan Makanan
 ![image](https://github.com/user-attachments/assets/f85d300d-e547-4dca-a5a4-0ae51315c3e4)
