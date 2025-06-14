@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  color: #ecf0f1;
+  padding: 12px 20px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.main-content {
+  padding: 30px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-card {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #5dade2 100%);
+  color: white;
+}
+
+.stats-card.success {
+  background: linear-gradient(135deg, var(--success-color) 0%, #58d68d 100%);
+}
+
+.stats-card.warning {
+  background: linear-gradient(135deg, var(--warning-color) 0%, #f7dc6f 100%);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #5dade2 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-weight: 500;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--success-color) 0%, #58d68d 100%);
+  border: none;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+  color: white;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  padding: 12px 15px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
